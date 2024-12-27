@@ -1,3 +1,4 @@
+import time
 
 class User:
     def __init__(self, nickname: str, password: int, age: int):
@@ -75,6 +76,7 @@ class UrTube:
                 for i in range(x.duration):
                     print(i + 1, end=' ')
                     x.time_now += 1
+                    time.sleep(1)
                 x.time_now = 1
                 print('Конец видео')
 
